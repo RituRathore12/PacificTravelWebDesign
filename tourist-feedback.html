@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        /*tourist-feedback*/
+        .f-back {
+            width: 350px;
+            height: 350px;
+           position: relative;
+           top: 100px;
+           border-radius: 15px;
+           background-color: white;
+           z-index: 2;
+        }
+        .tourist{
+            min-height:100vh;
+            background-image: url(bg_1.jpg);
+            background-size: cover;
+            position: relative;
+        }
+        .overlay {
+         width: 100%;
+         height: 100vh;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background-color:  rgba(0, 85, 92,0.5);
+      z-index: 1;
+
+    }
+    .testimonial {
+    position: relative;
+    z-index: 2;
+    }
+    .f-icon img:hover{
+          width: 130px;  
+        }
+        
+    </style>
+
+</head>
+
+<body>
+     <!--tourist -feedback-->
+    <div class="tourist">
+    <div class="overlay"></div>
+    <div class="testimonial text-center mb-1 text-light ">
+    <h4 class="m-3">Testimonial</h4>
+    <h1>Tourist Feedback</h1></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="f-back ">
+                    <div class="icon ms-5">
+                    <i class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                        style="color: #ee766d;"></i><i class="fa-solid fa-star" style="color: #ee766d;"></i><i
+                        class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                        style="color: #ee766d;"></i></div>
+                    <p class="m-3">Far far away, behind the word mountains,<br>
+                         far from the countries Vokalia and Consonantia,there
+                        live the blind texts. </p>
+                        <div class="f-icon d-flex m-4 mt-5">
+                        <img src="person_1.jpg" width="120px"style="border-radius:50%;">
+                        <div class="text ms-3 mt-4">
+                        <h5>Roger Scott</h5>
+                        <p style="font-size: 14px;">Marketing Manager</p></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="f-back ">
+                    <div class="icon ms-5">
+                    <i class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                        style="color: #ee766d;"></i><i class="fa-solid fa-star" style="color: #ee766d;"></i><i
+                        class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                        style="color: #ee766d;"></i></div>
+                    <p class="m-3">Far far away, behind the word mountains,<br>
+                         far from the countries Vokalia and Consonantia,there
+                        live the blind texts. </p>
+                        <div class="f-icon d-flex m-4 mt-5  ">
+                        <img src="person_4.jpg" width="120px"style="border-radius:50%;">
+                        <div class="text ms-3 mt-4">
+                        <h5>Roger Scott</h5>
+                        <p style="font-size: 14px;">Marketing Manager</p></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="col-lg-4">
+                <div class="f-back ">
+                    <div class="icon ms-5">
+                    <i class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                        style="color: #ee766d;"></i><i class="fa-solid fa-star" style="color: #ee766d;"></i><i
+                        class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                        style="color: #ee766d;"></i></div>
+                    <p class="m-3">Far far away, behind the word mountains,<br>
+                         far from the countries Vokalia and Consonantia,there
+                        live the blind texts. </p>
+                        <div class="f-icon d-flex m-4 mt-5  ">
+                        <img src="person_2.jpg" width="120px" style="border-radius:50%;">
+                        <div class="text ms-3 mt-4">
+                        <h5>Roger Scott</h5>
+                        <p style="font-size: 14px;">Marketing Manager</p></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+        </div>
+    </div>
+    </div>
+    <script src="all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <style>
+        /*home*/
+        .navbar {
+            position: absolute;
+            top: 10px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            font-weight: 500;
+        }
+
+        .navbar p {
+            color: #ff6f61;
+        }
+
+        .home {
+            height: 100vh;
+
+
+        }
+
+        .home img {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .home .overlay {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(14, 15, 15, 0.5);
+            z-index: 1;
+
+        }
+
+        .home-t {
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            z-index: 1;
+
+
+        }
+
+        .home-t h1 {
+            font-size: 38px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .home-t h4 {
+            color: #ff6f61;
+        }
+
+        .home-t p {
+            font-size: 12px;
+            padding-top: 18px;
+        }
+
+        @media (max-width: 320px) {
+            .home-t h1 {
+                position: absolute;
+                top: 30px;
+                font-size: 15px;
+
+            }
+
+            .home-t h4 {
+                top: 0px;
+            }
+        }
+
+        .video {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            position: absolute;
+            top: 40%;
+            left: 80%;
+            z-index: 2;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 320px) {
+            .video {
+                width: 60px;
+                height: 60px;
+                top: 20%;
+                left: 50%;
+            }
+        }
+
+
+
+
+        .s {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            bottom: 200px;
+            left: 30%;
+            z-index: 2;
+            border-radius: 30px;
+            padding-top: 8px;
+
+        }
+
+        .h {
+            width: 100px;
+            height: 50px;
+            background-color: #ff6f61;
+            position: absolute;
+            bottom: 2px;
+            left: 120%;
+            border-radius: 30px;
+            padding-top: 8px;
+
+
+        }
+
+        .h:hover {
+            background-color: white;
+        }
+
+        .home-t h4 {
+            font-family: "Arizonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .navbar-brand p {
+            font-family: "Arizonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nav-item .nav-link:hover {
+            color: #ff6f61;
+        }
+
+        /*welcome*/
+        .sv {
+            width: 100px;
+            height: 80px;
+            background-color: #ff6f61;
+            position: absolute;
+            bottom: 150px;
+            left: -25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+
+        }
+
+        .services-1 .overlay {
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(66, 66, 178, 0.5);
+        }
+
+        .services-1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+
+        .services-1 {
+            width: 250px;
+            height: 300px;
+            margin: 25px;
+            position: relative;
+
+        }
+
+        .box-text {
+            position: absolute;
+            top: 120px;
+            margin-inline: 20px;
+            color: white;
+        }
+
+        .sv i {
+            font-size: larger;
+        }
+
+        .services-2 {
+            width: 250px;
+            height: 300px;
+            margin: 25px;
+            position: relative;
+
+        }
+
+        .services-2 .overlay {
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(74, 165, 99, 0.5);
+        }
+
+        .services-2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+
+        .services-3 {
+            width: 250px;
+            height: 300px;
+            margin: 25px;
+            position: relative;
+
+
+        }
+
+        .services-3 .overlay {
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(171, 50, 50, 0.5);
+        }
+
+        .services-3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .serv {
+            height: 700px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .welcome2 h5 {
+            color: #ff6f61;
+        }
+
+        .welcome-img {
+            margin-left: 10px;
+        }
+
+        .welcome2 {
+            width: 50vh;
+            position: absolute;
+            top: 80px;
+            left: 500px;
+        }
+
+        .box-text {
+            z-index: 2;
+        }
+
+        @media (max-width: 320px) {
+            .services-1 {
+                display: none;
+            }
+
+
+        }
+
+
+
+
+        /*destination*/
+        .p {
+            width: 250px;
+            height: 350px;
+            position: relative;
+            margin-top: 20px;
+            top: 100px;
+
+
+        }
+
+
+        .p img {
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+
+        }
+
+        .p1 {
+            width: 120px;
+            height: 40px;
+            background-color: #ff6f61;
+            color: white;
+            position: absolute;
+            top: -10px;
+            left: 10%;
+        }
+
+        .p2 {
+            width: 80px;
+            height: 30px;
+            background-color: #ff6f61;
+            color: white;
+            border-radius: 10px;
+            position: absolute;
+            top: 70%;
+            left: 70%;
+        }
+
+        .syd {
+            min-height: 100vh;
+            margin-top: 20px;
+            text-align: center;
+            background-image: url(abcd.jpg);
+            background-size: cover;
+            object-fit: fill;
+        }
+
+        .syd h2 {
+            color: #ff6f61;
+        }
+
+        .p1:hover {
+            width: 150px;
+            height: 45px;
+        }
+
+        .p2:hover {
+            width: 100px;
+        }
+
+        .syd h2 {
+            font-family: "Arizonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /*about us*/
+        .i1 {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .i1 img {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .i2 {
+            width: 80%;
+            position: relative;
+        }
+
+        .i2 img {
+            width: 80%;
+            height: 500px;
+            position: absolute;
+            top: -80px;
+
+        }
+
+        @media (max-width: 768px) {
+            .i2 img {
+                width: 100%;
+                height: 340px;
+                margin-top: 20px;
+            }
+
+            .i2 {
+                width: 100%;
+                height: 340px;
+                position: absolute;
+
+            }
+        }
+
+        .text-a h2 {
+            color: #ff6f61;
+        }
+
+        .video .i2 {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* tour-desttination*/
+        .td {
+            margin-top: 100px;
+            min-height: 100vh;
+            min-width: 100vh;
+            background-color: whitesmoke;
+
+
+        }
+
+        .td h2 {
+            font-family: "Arizonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .td h2 {
+            color: #ff6f61;
+        }
+
+        .td1 {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin-bottom: 100px;
+
+        }
+
+        .td1 img {
+            width: 300px;
+            height: 250px;
+        }
+
+        .td2 {
+            width: 120px;
+            height: 40px;
+            background-color: #ff6f61;
+            color: white;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+
+        .td3 {
+            width: 280px;
+            height: 180px;
+            margin-inline: 10px;
+            background-color: white;
+            position: absolute;
+            top: 180px;
+            padding: 10px;
+        }
+
+        .td3 h6 {
+            color: #ff6f61;
+
+        }
+
+        .td4 p {
+            color: #ff6f61;
+        }
+
+        @media (min-width:1024px) {
+            .td {
+                text-align: center;
+            }
+        }
+
+        .td2:hover {
+            width: 150px;
+            height: 45px;
+        }
+
+        /*tourist-feedback*/
+        .f-back {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            top: 100px;
+            border-radius: 15px;
+            background-color: white;
+            z-index: 2;
+        }
+
+        .tourist {
+            min-height: 100vh;
+            background-image: url(bg_1.jpg);
+            background-size: cover;
+            position: relative;
+        }
+
+        .tourist .overlay {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(0, 85, 92, 0.5);
+            z-index: 1;
+
+        }
+
+        .testimonial {
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial h2 {
+            font-family: "Arizonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .f-icon img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .f-icon img:hover {
+            width: 130px;
+        }
+
+        .f-icon p,
+        h5 {
+            margin-left: 40px;
+            color: black;
+        }
+
+        /*blog*/
+        .top {
+            width: 150px;
+            height: 60px;
+            background-color: #ff6f61;
+            color: white;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+
+        }
+
+
+        .box2 {
+            width: 320px;
+            height: 150px;
+            margin-inline: 20px;
+            background-color: white;
+            position: absolute;
+            top: 150px;
+            padding: 10px;
+
+
+
+        }
+
+        .box2 .blog-text {
+            margin-top: 50px;
+        }
+
+        .recent-post {
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+
+        .box img {
+            width: 380px;
+            height: 220px;
+        }
+
+        .recent-post h2 {
+            color: #ff6f61;
+
+        }
+
+        .top:hover {
+            width: 180px;
+            height: 70px;
+        }
+
+        .recent-post h2 {
+            font-family: "Arizonia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .box {
+            margin-bottom: 100px;
+        }
+
+
+        /*QUOTE*/
+        .image {
+            position: relative;
+        }
+
+        .image img {
+            width: 950px;
+            height: 250px;
+            position: absolute;
+        }
+
+        .text {
+            position: absolute;
+            color: whitesmoke;
+            top: 50%;
+            left: 50%;
+            font-weight: 800px;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+        }
+
+        .image .overlay {
+            height: 250px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+
+        .image img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .q {
+            height: 50vh;
+            padding: 30px;
+            margin-top: 100px;
+            position: relative;
+            background-color: whitesmoke;
+        }
+
+        @media (max-width: 320px) {
+            .q {
+                display: none;
+
+            }
+
+        }
+
+
+        /*footer*/
+        footer {
+
+            min-height: 100vh;
+            position: relative;
+            background-image: url("abcd.jpg");
+            background-size: cover;
+            margin-top: 100px;
+        }
+
+        .footer .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: #ff6f61;
+            text-align: center;
+            color: white;
+
+        }
+
+        .f {
+            margin-top: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!----home------>
+    <div class="home">
+        <img src="bg_5.jpg" class="img-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="overlay"></div>
+                    <nav class="navbar navbar-expand-lg bg-body-transparent navbar-dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand pt-4"
+                                style="padding-left:150px;font-size:18px;position: absolute;top: px;font-weight: 400;"
+                                href="#">Pacific
+                                <p style="color: #ff6f61;font-size: 25px;font-weight: 500;">Travel Agency</p>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav  mb-2 mb-lg-0" style="margin-left:600px;">
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                                    </li>
+
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="about-about-us.html">About</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="destination.html">Destination</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active" aria-current="page" href="hotel.html">Hotel</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active" aria-current="page" href="L-BLOG.HTML">Blog</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                                    </li>
+
+                                    </form>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="video">
+                        <a href="about-video.mp4">
+                            <i class="fa-solid fa-play text-center"
+                                style="color: #ff6f61;margin:21px;font-size: 50px;"></i></a>
+
+                    </div>
+
+                    <div class="home-t"data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+                        <h4 style="font-weight: 400;">Welcome to Pacific</h4>
+                        <h1>Discover Your Favorite <br> Place with Us
+                            <p> Travel to the any corner of the world, without going around in circles</p>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class=" span d-flex mb-3">
+                    <div class="s text-center fs-5"> <a href="b-aboutus.html"
+                            style="text-decoration: none;color:black;"> Search </a></span>
+                        <div class="h text-center"><a href="blog.html" style="text-decoration:none; color:black;">
+                                Hotel</a></span></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----welcome------>
+        <div class="ws d-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="serv">
+                            <div class="services-1" data-aos="zoom-in-up">
+                                <img src="services-1.jpg" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="box-text">
+                                    <h5>Activities1</h5>
+                                    <p>A small river named Duden flows by their place and supplies it with the
+                                        necessary
+                                    </p>
+                                    <div class="sv">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                    </div>
+                                </div>
+
+                                <div class="services-2" data-aos="zoom-in-up">
+                                    <img src="services-2.jpg" class="img-fluid">
+                                    <div class="overlay"></div>
+                                    <div class="box-text">
+                                        <h5>Travel Arrangements</h5>
+                                        <p>A small river named Duden flows by their place and supplies it with the
+                                            necessary
+                                        </p>
+                                        <div class="sv">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services-2" data-aos="zoom-in-up">
+                                <img src="services-3.jpg" class="img-fluid">
+                                <div class="overlay"></div>
+                                <div class="box-text">
+                                    <h5>Private Guide</h5>
+                                    <p>A small river named Duden flows by their place and supplies it with the
+                                        necessary
+                                    </p>
+                                    <div class="sv">
+                                        <i class="fa-solid fa-person-chalkboard"></i>
+                                    </div>
+                                </div>
+
+                                <div class="services-3" data-aos="zoom-in-up">
+                                    <img src="services-4.jpg" class="img-fluid">
+                                    <div class="overlay"></div>
+                                    <div class="box-text">
+                                        <h5>Location Manager</h5>
+                                        <p>A small river named Duden flows by their place and supplies it with the
+                                            necessary
+                                        </p>
+                                        <div class="sv">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="welcome2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                                    <div class="container">
+                                        <div class="row g-5">
+                                            <div class="col-lg-12">
+                                                <h5>Welcome to Pacific</h5>
+                                                <h1>It's time to start your adventure</h1>
+                                                <p>A small river named Duden flows by their place and supplies it with
+                                                    the
+                                                    necessary
+                                                    regelialia.<br>
+                                                    It is a paradisematic country, in which roasted parts of sentences
+                                                    fly
+                                                    into your mouth.</p>
+                                                <p>Far far away, behind the word mountains, far from the countries
+                                                    Vokalia
+                                                    and Consonantia,<br>
+                                                    there live the blind texts. Separated they live in Bookmarksgrove
+                                                    right
+                                                    at the coast of
+                                                    the<br>
+                                                    Semantics, a large language ocean. A small river named Duden flows
+                                                    by
+                                                    their place and
+                                                    supplies<br>
+                                                    it with the necessary regelialia.</p>
+                                                <a href="destination.html" class="btn"
+                                                    style="background-color:#ff6f61;color:white;">Search
+                                                    Destination</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----destination---->
+        <div class="syd">
+            <h2 class="mt-2 pt-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Pacific Provide Places
+            </h2>
+            <h1 class="pt-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Select Your Destination</h2>
+                <div class="main-place" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="container">
+                        <div class="row g-1">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="p"data-aos="fade-up">
+                                    <img src="place-1.jpg" class="image-fluid">
+                                    <div class="p1 text-center fs-4">Philippines</div>
+                                    <div class="p2 text-center fs-5">8 Hours</div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="p"data-aos="fade-up">
+                                    <img src="place-2.jpg" class="image-fluid">
+                                    <div class="p1 text-center fs-4">Canada</div>
+                                    <div class="p2 text-center fs-5">5 Tours</div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="p"data-aos="fade-up">
+                                    <img src="place-3.jpg" class="image-fluid">
+                                    <div class="p1 text-center fs-4">Thailand</div>
+                                    <div class="p2 text-center fs-5">5 Tours</div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="p"data-aos="fade-up">
+                                    <img src="place-4.jpg" class="image-fluid">
+                                    <div class="p1 text-center fs-4">Australia</div>
+                                    <div class="p2 text-center fs-5">5 Tours</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!--tour-destination-->
+        <div class="td"><br>
+            <h2 class=" my-5 mx-5 pt-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Destination</h2>
+            <h1 class=" my-5 mx-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Tour Destination</h1>
+            <div class="container">
+                <div class="row" data-aos="fade-up">
+                    <div class="col-lg-4">
+                        <div class="td1">
+                            <img src="destination-1.jpg" class="image-fluid">
+                            <div class="td2 text-center fs-5">$550/person</div>
+                            <div class="td3">
+                                <h6>8 Days Tour</h6>
+                                <h3 class="fs-4">Banaue Rice Terraces</h3>
+                                <p> <i class="fa-solid fa-location-dot"></i> Banaue, Ifugao, Philippines</p>
+                                <div class="td4 d-flex ">
+                                    <p class="ms-2"><i class="fa-solid fa-bath"></i> 2</p>
+                                    <p class="ms-2"><i class="fa-solid fa-bed"></i> 3</p>
+                                    <p class="ms-2"><i class="fa-solid fa-mountain"></i>Near Mountain</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="td1"data-aos="fade-up">
+                            <img src="destination-2.jpg" class="image-fluid">
+                            <div class="td2 text-center fs-5">$550/person</div>
+                            <div class="td3">
+                                <h6>8 Days Tour</h6>
+                                <h3 class="fs-4">Banaue Rice Terraces</h3>
+                                <p> <i class="fa-solid fa-location-dot"></i> Banaue, Ifugao, Philippines</p>
+                                <div class="td4 d-flex ">
+                                    <p class="ms-2"><i class="fa-solid fa-bath"></i> 2</p>
+                                    <p class="ms-2"><i class="fa-solid fa-bed"></i> 3</p>
+                                    <p class="ms-2"><i class="fa-solid fa-mountain"></i>Near Mountain</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="td1"data-aos="fade-up">
+                            <img src="destination-3.jpg" class="image-fluid">
+                            <div class="td2 text-center fs-5">$550/person</div>
+                            <div class="td3">
+                                <h6>8 Days Tour</h6>
+                                <h3 class="fs-4">Banaue Rice Terraces</h3>
+                                <p> <i class="fa-solid fa-location-dot"></i> Banaue, Ifugao, Philippines</p>
+                                <div class="td4 d-flex ">
+                                    <p class="ms-2"><i class="fa-solid fa-bath"></i> 2</p>
+                                    <p class="ms-2"><i class="fa-solid fa-bed"></i> 3</p>
+                                    <p class="ms-2"><i class="fa-solid fa-mountain"></i>Near Mountain</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="td1">
+                            <img src="destination-4.jpg" class="image-fluid">
+                            <div class="td2 text-center fs-5">$550/person</div>
+                            <div class="td3">
+                                <h6>8 Days Tour</h6>
+                                <h3 class="fs-4">Banaue Rice Terraces</h3>
+                                <p> <i class="fa-solid fa-location-dot"></i> Banaue, Ifugao, Philippines</p>
+                                <div class="td4 d-flex ">
+                                    <p class="ms-2"><i class="fa-solid fa-bath"></i> 2</p>
+                                    <p class="ms-2"><i class="fa-solid fa-bed"></i> 3</p>
+                                    <p class="ms-2"><i class="fa-solid fa-mountain"></i>Near Mountain</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="td1">
+                            <img src="destination-5.jpg" class="image-fluid">
+                            <div class="td2 text-center fs-5">$550/person</div>
+                            <div class="td3">
+                                <h6>8 Days Tour</h6>
+                                <h3 class="fs-4">Banaue Rice Terraces</h3>
+                                <p> <i class="fa-solid fa-location-dot"></i> Banaue, Ifugao, Philippines</p>
+                                <div class="td4 d-flex ">
+                                    <p class="ms-2"><i class="fa-solid fa-bath"></i> 2</p>
+                                    <p class="ms-2"><i class="fa-solid fa-bed"></i> 3</p>
+                                    <p class="ms-2"><i class="fa-solid fa-mountain"></i>Near Mountain</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up">
+                        <div class="td1">
+                            <img src="destination-6.jpg" class="image-fluid">
+                            <div class="td2 text-center fs-5">$550/person</div>
+                            <div class="td3">
+                                <h6>8 Days Tour</h6>
+                                <h3 class="fs-4">Banaue Rice Terraces</h3>
+                                <p> <i class="fa-solid fa-location-dot"></i> Banaue, Ifugao, Philippines</p>
+                                <div class="td4 d-flex ">
+                                    <p class="ms-2"><i class="fa-solid fa-bath"></i> 2</p>
+                                    <p class="ms-2"><i class="fa-solid fa-bed"></i> 3</p>
+                                    <p class="ms-2"><i class="fa-solid fa-mountain"></i>Near Mountain</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-----about us------->
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="i1">
+                            <img src="bg_4.jpg" class="img-fluid" width="100%" style="height: 50vh;">
+                            <div class="video">
+                                <a href="about-video.mp4">
+                                    <i class="fa-solid fa-play text-center"
+                                        style="color: #ff6f61;margin:px;font-size: 20px;"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="i2">
+                            <img src="about-1.jpg" class="img-fluid img-thumbnail">
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                    <br><br><br><br>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="text-a" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                            <h2 class="ms-4" style="margin-top:80px;">About Us</h2>
+                            <h1 class="m-4">Make Your Tour<br> Memorable and Safe With Us</h1>
+                            <p class="m-4">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
+                                at the coast of the Semantics, a large language ocean.</p>
+                            <a href="#" class="btn " style="background-color:#ff6f61;color:white;margin-inline:20px;">
+                                Book Your Destination</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+
+        <!--tourist -feedback-->
+        <div class="tourist">
+            <div class="overlay"></div>
+            <div class="testimonial text-center mb-1 text-light ">
+                <h2 class="m-3 pt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    Testimonial</h2>
+                <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    Tourist Feedback</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="f-back" data-aos="fade-up">
+                            <div class="icon ms-5">
+                                <i class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star" style="color: #ee766d;"></i>
+                            </div>
+                            <p class="m-3">Far far away, behind the word mountains,<br>
+                                far from the countries Vokalia and Consonantia,there
+                                live the blind texts. </p>
+                            <div class="f-icon d-flex m-4 mt-5">
+                                <img src="person_1.jpg" width="120px" style="border-radius:50%;">
+                                <div class="text ms-3 mt-4">
+                                    <h5>Roger Scott</h5>
+                                    <p style="font-size: 14px;">Marketing Manager</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="f-back" data-aos="fade-up">
+                            <div class="icon ms-5">
+                                <i class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star" style="color: #ee766d;"></i>
+                            </div>
+                            <p class="m-3">Far far away, behind the word mountains,<br>
+                                far from the countries Vokalia and Consonantia,there
+                                live the blind texts. </p>
+                            <div class="f-icon d-flex m-4 mt-5  ">
+                                <img src="person_4.jpg" width="120px" style="border-radius:50%;">
+                                <div class="text ms-3 mt-4">
+                                    <h5>Roger Scott</h5>
+                                    <p style="font-size: 14px;">Marketing Manager</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="f-back" data-aos="fade-up">
+                            <div class="icon ms-5">
+                                <i class="fa-solid fa-star" style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star"
+                                    style="color: #ee766d;"></i><i class="fa-solid fa-star" style="color: #ee766d;"></i>
+                            </div>
+                            <p class="m-3">Far far away, behind the word mountains,<br>
+                                far from the countries Vokalia and Consonantia,there
+                                live the blind texts. </p>
+                            <div class="f-icon d-flex m-4 mt-5  ">
+                                <img src="person_2.jpg" width="120px" style="border-radius:50%;">
+                                <div class="text ms-3 mt-4">
+                                    <h5>Roger Scott</h5>
+                                    <p style="font-size: 14px;">Marketing Manager</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--blog-->
+        <div class="recent-post ">
+            <div class="blog-text mx-5">
+                <h2 class="text-center my-5 mx-5 pt-5" data-aos="fade-up" 
+                data-aos-anchor-placement="top-bottom">Our
+                    Blog<br></h2>
+                <h1 class="text-center"data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">Recent Post</h1>
+            </div>
+            <div class="container">
+                <div class="row"data-aos="fade-up">
+                    <div class="col-lg-4">
+                        <div class="box" style="position: relative;margin-top: 80px;"data-aos="fade-up">
+                            <img src="image_1.jpg" class="img-fluid">
+                            <div class="top d-flex pe-5">
+                                <h1 class="p-2 pt-0" style="font-size:50px;">11</h1>
+                                <h6>2020 <br> September</h6>
+                            </div>
+                            <div class="box2">
+                                <h5 class="p-3"> Most Popular Place In This World</h4>
+                                    <a href="#" class="btn "
+                                        style="background-color:#ff6f61;color:white;margin-inline:20px;">Read
+                                        More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="box" style="position: relative;margin-top: 80px;"data-aos="fade-up">
+                            <img src="image_2.jpg" class="img-fluid">
+                            <div class="top d-flex pe-5">
+                                <h1 class="p-2 pt-0" style="font-size:50px;">11</h1>
+                                <h6>2020 <br> September</h6>
+                            </div>
+                            <div class="box2">
+                                <h5 class="p-3"> Most Popular Place In This World</h4>
+                                    <a href="#" class="btn "
+                                        style="background-color:#ff6f61;color:white;margin-inline:20px;">Read
+                                        More</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="box" style="position: relative;margin-top: 80px;"data-aos="fade-up">
+                            <img src="image_3.jpg" class="img-fluid">
+                            <div class="top d-flex pe-5">
+                                <h1 class="p-2 pt-0" style="font-size:50px;">11</h1>
+                                <h6>2020 <br> September</h6>
+                            </div>
+                            <div class="box2">
+                                <h5 class="p-3"> Most Popular Place In This World</h4>
+                                    <a href="#" class="btn "
+                                        style="background-color:#ff6f61;color:white;margin-inline:20px;">Read
+                                        More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+        <!--QUOTE --->
+        <div class="q"data-aos="zoom-in">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 col-md-12 ">
+
+                        <div class="image" style="height:250px;">
+                            <img src="bg_2.jpg" class="img-fluid">
+                            <div class="overlay"></div>
+                            <div class="text">
+                                <h4 style="font-weight: 800;">WE ARE PACIFIC A TRAVEL AGNECY</h4>
+                                <p style="font-weight: 100;font-size: 15px;">We can manage your dream building A small
+                                    river
+                                    named Duden
+                                    flows by their place</p>
+                                <a href="" class="btn" style="background-color:#ff6f61;">Ask for Quote</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="f">
+                            <h5 class="m-4 ms-0">About</h5>
+                            <p class="ms-0" style="font-size: 15px;font-weight: 100px;">Far far away, behind the
+                                word<br>
+                                mountains,
+                                far from the countries<br> Vokalia and Consonantia, there<br>
+                                live the blind texts.</p>
+                            <div class="d-flex fs-3"data-aos="fade-up">
+                                <p class="icon"><i class="fab fa-twitter"></i></p>
+                                <p class="icon"><i class="fab fa-facebook-f"></i></p>
+                                <p class="icon"><i class="fab fa-instagram"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Information -->
+                    <div class="col-md-3 mb-4">
+                        <div class="f">
+                            <h5 class="m-4 ms-0">Information</h5>
+                            <ul class="list-unstyled" style="font-size:15px;">
+                                <li class="text-decoration-none text-dark">Online Enquiry</li>
+                                <li class="text-decoration-none text-dark">General Enquiries</li>
+                                <li class="text-decoration-none text-dark">Booking Conditions</li>
+                                <li class="text-decoration-none text-dark">Privacy and Policy</li>
+                                <li class="text-decoration-none text-dark">Refund Policy</li>
+                                <li class="text-decoration-none text-dark">Call Us</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="col-md-3 mb-4">
+                        <div class="f">
+                            <h5 class="m-4 ms-0">Experience</h5>
+                            <ul class="list-unstyled">
+                                <li class="text-decoration-none text-dark">Adventure</li>
+                                <li class="text-decoration-none text-dark">Hotel and Restaurant</li>
+                                <li class="text-decoration-none text-dark">Beach</li>
+                                <li class="text-decoration-none text-dark">Nature</li>
+                                <li class="text-decoration-none text-dark">Camping</li>
+                                <li class="text-decoration-none text-dark">Party</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-3 mb-4">
+                        <div class="f">
+                            <h5 class="m-4 ms-0">Have a Questions?</h5>
+                            <ul class="list-unstyled text-dark">
+                                <li><i class="fas fa-map-marker-alt me-2" style="color: #ff6f61;"></i>203 Fake St.
+                                    Mountain
+                                    View, San Francisco,
+                                    California, USA</li>
+                                <li class="mt-2"><i class="fas fa-phone me-2" style="color: #ff6f61;"></i>+2 392 3929
+                                    210
+                                </li>
+                                <li class="mt-2"><i class="fas fa-envelope me-2"
+                                        style="color: #ff6f61;"></i>info@yourdomain.com</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <p class="text-center" style="position: absolute; top: 500px; left: 500px;">Copyright © 2025 All
+                        rights
+                        reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+                </div>
+            </div>
+    </div>
+    </div>
+    </footer>
+
+    <script src="all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
