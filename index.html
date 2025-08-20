@@ -13,6 +13,7 @@
 
     <style>
         /*home*/
+    
         .navbar {
             position: absolute;
             top: 10px;
@@ -29,6 +30,7 @@
         }
 
         .home {
+            max-width: 100%;
             height: 100vh;
 
 
@@ -41,7 +43,7 @@
         }
 
         .home .overlay {
-            width: 100%;
+            max-width: 100%;
             height: 100vh;
             position: absolute;
             top: 0px;
@@ -220,6 +222,7 @@
             height: 300px;
             margin: 25px;
             position: relative;
+            margin-left: 10px;
 
         }
 
@@ -240,13 +243,11 @@
 
 
         }
-
         .services-3 {
             width: 250px;
             height: 300px;
             margin: 25px;
             position: relative;
-
 
         }
 
@@ -257,10 +258,38 @@
             bottom: 0px;
             left: 0px;
             right: 0px;
-            background-color: rgba(171, 50, 50, 0.5);
+            background-color: rgba(74, 165, 99, 0.5);
         }
 
         .services-3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+
+        }
+
+        .services-4 {
+            width: 250px;
+            height: 300px;
+            margin: 25px;
+            position: relative;
+            margin-left: 10px;
+
+
+        }
+
+        .services-4 .overlay {
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: rgba(171, 50, 50, 0.5);
+        }
+
+        .services-4 img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -294,6 +323,13 @@
 
         @media (max-width: 320px) {
             .services-1 {
+                display: none;
+            }
+            .services-2{
+                width: 250px;
+
+            }
+            .welcome2{
                 display: none;
             }
 
@@ -429,7 +465,7 @@
         .td {
             margin-top: 100px;
             min-height: 100vh;
-            min-width: 100vh;
+            min-width: 100vw;
             background-color: whitesmoke;
 
 
@@ -501,14 +537,17 @@
 
         /*tourist-feedback*/
         .f-back {
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
             height: 350px;
             position: relative;
             top: 100px;
             border-radius: 15px;
             background-color: white;
             z-index: 2;
+            margin-bottom: 10px;
         }
+
 
         .tourist {
             min-height: 100vh;
@@ -577,17 +616,19 @@
             position: absolute;
             top: 150px;
             padding: 10px;
+            margin-left: px;
+            
 
 
 
         }
 
         .box2 .blog-text {
-            margin-top: 50px;
+            margin-top: 10px;
         }
 
         .recent-post {
-            height: 100vh;
+            height: 110vh;
             background-color: whitesmoke;
         }
 
@@ -613,7 +654,7 @@
         }
 
         .box {
-            margin-bottom: 100px;
+            margin-bottom: 30px;
         }
 
 
@@ -822,7 +863,7 @@
                                     </div>
                                 </div>
 
-                                <div class="services-3" data-aos="zoom-in-up">
+                                <div class="services-4" data-aos="zoom-in-up">
                                     <img src="services-4.jpg" class="img-fluid">
                                     <div class="overlay"></div>
                                     <div class="box-text">
@@ -878,7 +919,7 @@
 
         <!----destination---->
         <div class="syd">
-            <h2 class="mt-2 pt-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Pacific Provide Places
+            <h2 class="mt-2 pt-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom ">Pacific Provide Places
             </h2>
             <h1 class="pt-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom">Select Your Destination</h2>
                 <div class="main-place" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
@@ -1331,11 +1372,7 @@
 
                 </div>
 
-                <div class="col-md-3 mb-4">
-                    <p class="text-center" style="position: absolute; top: 500px; left: 500px;">Copyright © 2025 All
-                        rights
-                        reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
-                </div>
+                
             </div>
     </div>
     </div>
