@@ -341,24 +341,40 @@
             z-index: 2;
         }
 
-        @media (max-width: 480px) {
-            .services-1 {
-                display: none;
-            }
-            .services-2{
-                width: 250px;
+        @media (max-width: 768px) {
 
-            }
-            .welcome2{
-                display: none;
-            }
+    .ws .container > .row > .col-lg-12 {
+        display: block;
+    }
 
+    .serv {
+        width: 100%;
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    .welcome2 {
+        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .serv {
+        grid-template-columns: 250px;
+    }
+}
 
         }
 @media (max-width: 768px) {
     .services-1 {
         display: none;
     }
+}
+.ws .container > .row > .col-lg-12 {
+    display: flex;
+    align-items: center;
 }
 
 
