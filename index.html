@@ -181,159 +181,110 @@
         }
 
         /*welcome*/
-         .ws{
-         min-height:100vh;
+       .ws {
+    min-height: 100vh;
+}
 
-          }
-        .sv {
-            width: 100px;
-            height: 80px;
-            background-color: #ff6f61;
-            position: absolute;
-            bottom: 150px;
-            left: -25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
+.sv {
+    width: 100px;
+    height: 80px;
+    background-color: #ff6f61;
+    position: absolute;
+    bottom: 150px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
 
-        }
+.services-1,
+.services-2,
+.services-3,
+.services-4 {
+    width: 250px;
+    height: 300px;
+    margin: 0;
+    position: relative;
+}
 
-        .services-1 .overlay {
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            background-color: rgba(66, 66, 178, 0.5);
-        }
+.services-1 img,
+.services-2 img,
+.services-3 img,
+.services-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        .services-1 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+.services-1 .overlay,
+.services-2 .overlay,
+.services-3 .overlay,
+.services-4 .overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
+.services-1 .overlay {
+    background-color: rgba(66, 66, 178, 0.5);
+}
 
-        }
+.services-2 .overlay {
+    background-color: rgba(74, 165, 99, 0.5);
+}
 
-        .services-1 {
-            width: 250px;
-            height: 300px;
-            margin: 25px;
-            position: relative;
+.services-3 .overlay {
+    background-color: rgba(74, 165, 99, 0.5);
+}
 
-        }
+.services-4 .overlay {
+    background-color: rgba(171, 50, 50, 0.5);
+}
 
-        .box-text {
-            position: absolute;
-            top: 120px;
-            margin-inline: 20px;
-            color: white;
-        }
+.box-text {
+    position: absolute;
+    top: 120px;
+    margin-inline: 20px;
+    color: white;
+    z-index: 2;
+}
 
-        .sv i {
-            font-size: larger;
-        }
+.sv i {
+    font-size: larger;
+}
 
-        .services-2 {
-            width: 250px;
-            height: 300px;
-            margin: 25px;
-            position: relative;
-            margin-left: 10px;
-
-        }
-
-        .services-2 .overlay {
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            background-color: rgba(74, 165, 99, 0.5);
-        }
-
-        .services-2 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-
-        }
-        .services-3 {
-            width: 250px;
-            height: 300px;
-            margin: 25px;
-            position: relative;
-
-        }
-
-        .services-3 .overlay {
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            background-color: rgba(74, 165, 99, 0.5);
-        }
-
-        .services-3 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-
-
-        }
-
-        .services-4 {
-            width: 250px;
-            height: 300px;
-            margin: 25px;
-            position: relative;
-            margin-left: 10px;
-
-
-        }
-
-        .services-4 .overlay {
-            height: 100%;
-            position: absolute;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            background-color: rgba(171, 50, 50, 0.5);
-        }
-
-        .services-4 img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .serv {
-            width: 55%;
+.serv {
+    width: 55%;
     display: grid;
     grid-template-columns: repeat(2, 250px);
     gap: 30px;
     justify-content: center;
-        }
+}
 
+.welcome2 {
+    width: 40%;
+    padding: 20px;
+}
 
+.welcome2 h5 {
+    color: #ff6f61;
+}
 
-        .welcome-img {
-            margin-left: 10px;
-        }
+.welcome-img {
+    margin-left: 10px;
+}
 
-        .box-text {
-            z-index: 2;
-        }
+.ws .container > .row > .col-lg-12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-        @media (max-width: 768px) {
-
+@media (max-width: 768px) {
     .ws .container > .row > .col-lg-12 {
         display: block;
     }
@@ -343,22 +294,23 @@
         grid-template-columns: repeat(2, 250px);
     }
 
-  
-
-@media (max-width: 550px) {
-
-    .serv {
-        grid-template-columns: 250px;
+    .welcome2 {
+        width: 100%;
+        margin-top: 40px;
     }
 }
 
-        
-.ws .container > .row > .col-lg-12 {
-    display: flex;
-    align-items: center;
+@media (max-width: 550px) {
+    .serv {
+        width: 100%;
+        grid-template-columns: 250px;
+    }
+
+    .welcome2 {
+        width: 100%;
+        padding: 20px 10px;
+    }
 }
-
-
 
 
         /*destination*/
