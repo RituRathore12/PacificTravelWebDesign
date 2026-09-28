@@ -327,8 +327,9 @@
             width: 300px;
             height: 350px;
             position: relative;
-            margin-top: 20px;
-            top: 100px;
+             margin: 20px auto 0;
+
+            
 
 
         }
@@ -364,7 +365,8 @@
 
         .syd {
             min-height: 100vh;
-            margin-top: 20px;
+            height : auto;
+            margin-top: 0;
             text-align: center;
             background-image: url(abcd.jpg);
             background-size: cover;
@@ -443,6 +445,30 @@
             border-radius: 50%;
             transform: translate(-50%, -50%);
         }
+        @media (max-width: 768px) {
+    .ws {
+        min-height: auto;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .syd {
+        min-height: auto;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .p {
+        width: 250px;
+        height: 300px;
+        margin: 20px auto 0;
+    }
+
+    .p img {
+        width: 250px;
+        height: 300px;
+    }
+}
 
         /* tour-desttination*/
         .td {
